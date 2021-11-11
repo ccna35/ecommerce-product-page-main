@@ -323,3 +323,24 @@ section {
 .delete {
   cursor: pointer;
 }
+
+.showCartBox {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  .menu {
+    display: none;
+  }
+
+  .cart-box {
+    width: 90%;
+    margin: 0 auto;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .row {
+    gap: 0;
+  }
+}

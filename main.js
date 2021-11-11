@@ -22,7 +22,7 @@ const add2cart = document.querySelector("#add2cart");
 const add = document.querySelector("#plus");
 const subtract = document.querySelector("#minus");
 const itemsCount = document.querySelector("#items-count");
-const cart = document.querySelector(".cart span");
+const cartItems = document.querySelector(".cart span");
 
 let count = 0;
 
@@ -39,5 +39,14 @@ subtract.addEventListener("click", () => {
 });
 
 add2cart.addEventListener("click", () => {
-  cart.innerHTML = count;
+  cartItems.innerHTML = count;
+});
+
+// Upper Cart
+
+const cart = document.querySelector(".cart");
+const cartBox = document.querySelector(".cart-box");
+
+cart.addEventListener("click", () => {
+  cartBox.classList.toggle("showCartBox");
 });
