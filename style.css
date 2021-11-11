@@ -258,6 +258,7 @@ section {
 
 /* Cart */
 .cart-box {
+  display: none;
   width: 310px;
   position: absolute;
   right: 10px;
@@ -325,7 +326,7 @@ section {
 }
 
 .showCartBox {
-  display: none;
+  display: block;
 }
 
 @media (max-width: 575px) {
