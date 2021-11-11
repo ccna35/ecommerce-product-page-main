@@ -50,3 +50,14 @@ const cartBox = document.querySelector(".cart-box");
 cart.addEventListener("click", () => {
   cartBox.classList.toggle("showCartBox");
 });
+
+document.body.addEventListener("click", (e) => {
+  //   if (
+  //     e.target.classList.value !== "cart-box" ||
+  //     e.target.classList.value !== "cart"
+  //   ) {
+  //     console.log("yes");
+  //     cartBox.classList.remove("showCartBox");
+  //   }
+  //   console.log(e.target.classList.value);
+});

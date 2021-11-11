@@ -185,7 +185,8 @@ section {
 }
 
 .description {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  color: #8e8e93;
 }
 
 .price {
@@ -283,6 +284,7 @@ section {
   border-radius: 10px;
   box-shadow: 0px 10px 20px 0px #c8c7cc;
   background-color: white;
+  z-index: 990;
 }
 
 .cart-header {
@@ -346,6 +348,29 @@ section {
   display: block;
 }
 
+.slider {
+  position: relative;
+}
+
+.arrows img {
+  padding: 7px 10px;
+  border-radius: 50%;
+  background-color: white;
+  display: none;
+}
+.arrows img:first-child {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+}
+.arrows img:last-child {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+
 @media (max-width: 575px) {
   .menu {
     display: none;
@@ -391,5 +416,13 @@ section {
 
   .items-counter {
     justify-content: space-around;
+  }
+
+  .big-img {
+    border-radius: 0;
+  }
+
+  .arrows img {
+    display: block;
   }
 }
