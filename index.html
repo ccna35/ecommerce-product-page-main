@@ -27,9 +27,36 @@
             </ul>
           </div>
           <div class="cart-profile-img-group">
-            <img src="images/icon-cart.svg" class="cart" />
+            <div class="cart">
+              <img src="images/icon-cart.svg" />
+
+              <span class="orange-items">0</span>
+            </div>
             <img src="images/image-avatar.png" class="profile" />
           </div>
+        </div>
+      </div>
+      <div class="cart-box">
+        <div class="cart-header">
+          <h2>Cart</h2>
+        </div>
+        <div class="cart-body">
+          <div class="cart-details">
+            <img
+              src="images/image-product-1-thumbnail.jpg"
+              class="bought-product"
+            />
+            <div class="cart-products">
+              <p class="item-title">Fall Limited Edition Sneakers</p>
+              <div class="prices">
+                <span class="item-price">$125.00</span> x
+                <span class="items-number">3</span>
+                <span class="total-price">$375.00</span>
+              </div>
+            </div>
+            <img src="images/icon-delete.svg" class="delete" />
+          </div>
+          <button>Checkout</button>
         </div>
       </div>
     </nav>
@@ -38,23 +65,46 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <img src="images/image-product-1.jpg" class="big-img" />
+            <img
+              src="images/image-product-1.jpg"
+              class="big-img show"
+              data-img="product-1"
+            />
+            <img
+              src="images/image-product-2.jpg"
+              class="big-img"
+              data-img="product-2"
+            />
+            <img
+              src="images/image-product-3.jpg"
+              class="big-img"
+              data-img="product-3"
+            />
+            <img
+              src="images/image-product-4.jpg"
+              class="big-img"
+              data-img="product-4"
+            />
             <div class="gallery">
               <img
                 class="thumbnail active"
                 src="images/image-product-1-thumbnail.jpg"
+                data-img="product-1"
               />
               <img
                 class="thumbnail"
                 src="images/image-product-2-thumbnail.jpg"
+                data-img="product-2"
               />
               <img
                 class="thumbnail"
                 src="images/image-product-3-thumbnail.jpg"
+                data-img="product-3"
               />
               <img
                 class="thumbnail"
                 src="images/image-product-4-thumbnail.jpg"
+                data-img="product-4"
               />
             </div>
           </div>
