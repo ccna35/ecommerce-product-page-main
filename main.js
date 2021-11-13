@@ -51,13 +51,37 @@ cart.addEventListener("click", () => {
   cartBox.classList.toggle("showCartBox");
 });
 
-document.body.addEventListener("click", (e) => {
-  //   if (
-  //     e.target.classList.value !== "cart-box" ||
-  //     e.target.classList.value !== "cart"
-  //   ) {
-  //     console.log("yes");
-  //     cartBox.classList.remove("showCartBox");
-  //   }
-  //   console.log(e.target.classList.value);
+// Mobile Slider
+
+const leftArrow = document.querySelector(".arrows img:first-child");
+const rightArrow = document.querySelector(".arrows img:last-child");
+
+let i = 0;
+
+rightArrow.addEventListener("click", () => {
+  bigImages.forEach((img) => {
+    img.classList.remove("show");
+  });
+  if (i == bigImages.length - 1) {
+    i = 0;
+    bigImages[i].classList.add("show");
+  } else {
+    i += 1;
+    bigImages[i].classList.add("show");
+  }
+});
+
+leftArrow.addEventListener("click", () => {
+  bigImages.forEach((img) => {
+    img.classList.remove("show");
+  });
+  if (i == 0) {
+    i = bigImages.length - 1;
+    console.log(i);
+    bigImages[i].classList.add("show");
+  } else {
+    i -= 1;
+    console.log(i);
+    bigImages[i].classList.add("show");
+  }
 });
