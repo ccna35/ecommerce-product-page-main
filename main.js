@@ -77,11 +77,21 @@ leftArrow.addEventListener("click", () => {
   });
   if (i == 0) {
     i = bigImages.length - 1;
-    console.log(i);
     bigImages[i].classList.add("show");
   } else {
     i -= 1;
-    console.log(i);
     bigImages[i].classList.add("show");
   }
+});
+
+// Mobile Menu
+
+const burgerIcon = document.querySelector(".burger-menu");
+const closeIcon = document.querySelector(".close");
+const darkOverlay = document.querySelector(".dark-overlay");
+
+burgerIcon.addEventListener("click", () => {
+  darkOverlay.classList.toggle("showOverlay");
+  burgerIcon.style.display = "none";
+  closeIcon.classList.toggle("closeIcon");
 });
