@@ -44,7 +44,7 @@ nav {
 }
 
 .burger-menu {
-  display: none;
+  /* display: none; */
   cursor: pointer;
 }
 
@@ -281,14 +281,15 @@ section {
 /* Cart */
 .cart-box {
   display: none;
-  width: 310px;
   position: absolute;
-  right: 10px;
-  top: 56px;
   border-radius: 10px;
   box-shadow: 0px 10px 20px 0px #c8c7cc;
   background-color: white;
   z-index: 990;
+  width: 90%;
+  margin: 0 auto;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .cart-header {
@@ -374,40 +375,42 @@ section {
   transform: translateY(-50%);
 }
 
-/* Dark Overlay */
+/* Mobile Sliding Menu */
 
-.dark-overlay {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  left: -110%;
-  bottom: 0;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 800;
-  transition: all 0.5s;
-  /* display: none; */
-}
-
-.showOverlay {
-  /* display: block; */
-  left: 0;
-}
 .close {
-  display: none;
+  /* display: none; */
   z-index: 1000;
 }
 .closeIcon {
   display: block;
 }
 
-.white-background {
-  background-color: rgb(58, 48, 48);
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.514);
   position: absolute;
-  width: 60vw;
+  width: 100vw;
   height: 100vh;
-  left: -100%;
+  right: 153%;
   top: 0;
+  transform: translateX(50%);
+  z-index: 999;
+  transition: all 0.5s;
+}
+
+.modal {
+  background-color: white;
+  padding: 19px;
+  height: 100%;
+  width: 60%;
+}
+
+.modal > *,
+.modal ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.toggleModal {
+  right: 50%;
 }
 
 /* @media (max-width: 575px) { */
@@ -497,6 +500,14 @@ section {
   .col:first-child {
     gap: 30px;
     margin-bottom: 50px;
+  }
+
+  .cart-box {
+    /* display: none; */
+    width: 310px;
+    right: 10px;
+    top: 56px;
+    transform: translateX(0);
   }
 }
 

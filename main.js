@@ -88,10 +88,12 @@ leftArrow.addEventListener("click", () => {
 
 const burgerIcon = document.querySelector(".burger-menu");
 const closeIcon = document.querySelector(".close");
-const darkOverlay = document.querySelector(".dark-overlay");
+const modal = document.querySelector(".modal-container");
 
 burgerIcon.addEventListener("click", () => {
-  darkOverlay.classList.toggle("showOverlay");
-  burgerIcon.style.display = "none";
-  closeIcon.classList.toggle("closeIcon");
+  modal.classList.add("toggleModal");
+});
+
+closeIcon.addEventListener("click", () => {
+  modal.classList.remove("toggleModal");
 });
