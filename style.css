@@ -387,7 +387,7 @@ section {
 
 .modal-container {
   background-color: rgba(0, 0, 0, 0.514);
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   right: 153%;
@@ -503,11 +503,18 @@ section {
   }
 
   .cart-box {
-    /* display: none; */
     width: 310px;
     right: 10px;
     top: 56px;
     transform: translateX(0);
+  }
+
+  .modal-container {
+    display: none;
+  }
+
+  .burger-menu {
+    display: none;
   }
 }
 
